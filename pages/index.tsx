@@ -150,8 +150,8 @@ export default function Home() {
               <div style={{ position: 'absolute', top: '16px', right: '16px', background: 'linear-gradient(135deg, #7c3aed, #a855f7)', color: '#fff', padding: '4px 12px', borderRadius: '50px', fontSize: '12px', fontWeight: '700' }}>⭐ Recommandé</div>
               <div style={{ color: '#a855f7', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>Pack Business</div>
               <div style={{ fontSize: '42px', fontWeight: '800', color: '#fff', marginBottom: '4px' }}>87€ <span style={{ fontSize: '16px', fontWeight: '400', color: '#c084fc' }}>HT/poste/mois</span></div>
-              <p style={{ color: '#c084fc', fontSize: '14px', marginBottom: '28px' }}>Protection maximale + DMARC inclus</p>
-              {['Tout le Pack Essentiel', 'SOC 24/7/365', 'Blocage applis non autorisées', 'Blocage clés USB', '✅ Protection DMARC incluse'].map(f => (
+              <p style={{ color: '#c084fc', fontSize: '14px', marginBottom: '28px' }}>Protection maximale + Protection domaine</p>
+              {['Tout le Pack Essentiel', 'SOC 24/7/365', 'Blocage applis non autorisées', 'Blocage clés USB', '✅ Protection Domaine incluse'].map(f => (
                 <div key={f} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', color: '#e9d5ff', fontSize: '14px' }}>
                   <span style={{ color: '#a855f7', fontWeight: '700' }}>✓</span> {f}
                 </div>
@@ -167,7 +167,7 @@ export default function Home() {
               { icon: '☎️', label: 'Ligne tél. illimitée (fair use)', price: '14€ HT/ligne/mois' },
               { icon: '🔒', label: 'Firewall géré', price: '60€ HT/mois' },
               { icon: '🔗', label: 'VPN multi-sites', price: '25€ HT/site/mois' },
-              { icon: '🛡️', label: 'Protection DMARC', price: '10€ HT/domaine/mois' },
+              { icon: '🛡️', label: 'Protection Domaine', price: '10€ HT/domaine/mois' },
               { icon: '📱', label: 'Mobile pro 5Go', price: '8€ HT/ligne/mois' },
               { icon: '📱', label: 'Mobile pro 20Go', price: '12€ HT/ligne/mois' },
               { icon: '📱', label: 'Mobile pro 50Go', price: '16€ HT/ligne/mois' },
