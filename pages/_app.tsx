@@ -39,7 +39,7 @@ function Header() {
             { label: 'Leasing', href: '/leasing' },
             { label: 'Contact', href: '/#contact' },
           ].map(link => (
-            <Link key={link.href} href={link.href} style={{ color: '#7dcef0', textDecoration: 'none', fontSize: '14px', fontWeight: '500', whiteSpace: 'nowrap' }}>
+            <Link key={link.href} href={link.href} style={{ color: '#1a2744', textDecoration: 'none', fontSize: '14px', fontWeight: '500', whiteSpace: 'nowrap' }}>
               {link.label}
             </Link>
           ))}
