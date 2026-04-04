@@ -301,10 +301,10 @@ const services = ['telephonie-entreprise', 'cybersecurite', 'maintenance-informa
 const deptServices = ['telephonie-entreprise', 'cybersecurite', 'maintenance-informatique', 'prestataire-informatique'];
 
 const serviceConfig: Record<string, { label: string; icon: string; desc: string; faqCats: string[] }> = {
-  'telephonie-entreprise': { label: "Téléphonie d'entreprise", icon: '📞', desc: 'Standards Yealink, Centrex cloud, SVI. Installation et formation sur site.', faqCats: ['telephonie', 'reseau', 'leasing'] },
-  'cybersecurite': { label: 'Cybersécurité', icon: '🛡️', desc: 'EDR, SOC 24/7, supervision, UseSecure. Protection complète de votre SI.', faqCats: ['cybersecurite', 'reseau', 'leasing'] },
-  'maintenance-informatique': { label: 'Maintenance informatique', icon: '🔧', desc: 'Télémaintenance, ticketing, mises à jour. Votre parc géré en continu.', faqCats: ['cybersecurite', 'reseau', 'leasing'] },
-  'prestataire-informatique': { label: 'Prestataire informatique', icon: '💻', desc: 'Téléphonie, cybersécurité, réseau, maintenance. Un seul expert pour tout.', faqCats: ['telephonie', 'cybersecurite', 'reseau', 'leasing'] },
+  'telephonie-entreprise': { label: "Téléphonie d'entreprise", icon: '📞', desc: 'Standards Yealink, Centrex cloud, SVI. Installation et formation sur site.', faqCats: ['telephonie', 'telephonie', 'reseau', 'leasing', 'leasing'] },
+  'cybersecurite': { label: 'Cybersécurité', icon: '🛡️', desc: 'EDR, SOC 24/7, supervision, UseSecure. Protection complète de votre SI.', faqCats: ['cybersecurite', 'cybersecurite', 'reseau', 'leasing', 'leasing'] },
+  'maintenance-informatique': { label: 'Maintenance informatique', icon: '🔧', desc: 'Télémaintenance, ticketing, mises à jour. Votre parc géré en continu.', faqCats: ['cybersecurite', 'cybersecurite', 'reseau', 'leasing', 'leasing'] },
+  'prestataire-informatique': { label: 'Prestataire informatique', icon: '💻', desc: 'Téléphonie, cybersécurité, réseau, maintenance. Un seul expert pour tout.', faqCats: ['telephonie', 'cybersecurite', 'reseau', 'leasing', 'leasing'] },
 };
 
 // ============================================================
@@ -316,7 +316,7 @@ function selectFaq(slugFull: string, cats: string[]): typeof faqPool {
   const selected: typeof faqPool = [];
   const indices = new Set<number>();
   let i = 0;
-  while (selected.length < 4 && i < 20) {
+  while (selected.length < 5 && i < 20) {
     const idx = (hash + i * 7) % available.length;
     if (!indices.has(idx)) {
       indices.add(idx);
@@ -450,7 +450,7 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px' }}>
             {[
               { icon: '🏆', val: '200+', label: 'entreprises accompagnées' },
-              { icon: '⏱️', val: '15 ans', label: "d'expérience" },
+              { icon: '⏱️', val: '10 ans', label: "d'expérience" },
               { icon: '📡', val: '24/7', label: 'supervision réseau' },
               { icon: '⚡', val: '< 24h', label: 'délai de réponse' },
             ].map((s, i) => (
