@@ -6,19 +6,22 @@ export default function Header() {
 
   return (
     <header style={{
-      background: 'linear-gradient(135deg, #1e0b3e 0%, #2d1458 100%)',
-      borderBottom: '1px solid rgba(124,58,237,0.3)',
-      position: 'sticky',
+      background: 'linear-gradient(135deg, #1a2744 0%, #1e3460 100%)',
+      borderBottom: '1px solid rgba(77,184,232,0.3)',
+      position: 'fixed',
       top: 0,
-      zIndex: 1000,
-      boxShadow: '0 2px 20px rgba(124,58,237,0.2)'
+      left: 0,
+      right: 0,
+      width: '100%',
+      zIndex: 9999,
+      boxShadow: '0 2px 20px rgba(26,39,68,0.4)'
     }}>
       <div style={{
         maxWidth: '1200px', margin: '0 auto', padding: '0 24px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '70px'
       }}>
         <Link href="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '24px', fontWeight: '800', color: '#fff', letterSpacing: '-0.5px' }}>1FONIE</span>
+          <img src="/logo-blanc.png" alt="1fonie" style={{ height: '36px', objectFit: 'contain' }} />
         </Link>
 
         <nav style={{ display: 'flex', gap: '28px', alignItems: 'center' }} className="nav-desktop-1f">
@@ -30,7 +33,7 @@ export default function Header() {
             { label: 'Contact', href: '/#contact' },
           ].map(link => (
             <Link key={link.href} href={link.href} style={{
-              color: '#c084fc', textDecoration: 'none', fontSize: '14px',
+              color: '#7dcef0', textDecoration: 'none', fontSize: '14px',
               fontWeight: '500', whiteSpace: 'nowrap'
             }}>{link.label}</Link>
           ))}
@@ -38,16 +41,15 @@ export default function Header() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <a href="tel:0320492900" style={{
-            color: '#a855f7', textDecoration: 'none', fontWeight: '700',
+            color: '#4db8e8', textDecoration: 'none', fontWeight: '700',
             fontSize: '15px', display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap'
           }}>📞 03 20 49 29 00</a>
           <Link href="/#contact" style={{
-            background: 'linear-gradient(135deg, #7c3aed, #a855f7)', color: '#fff',
+            background: 'linear-gradient(135deg, #4db8e8, #2aa8de)', color: '#fff',
             padding: '9px 20px', borderRadius: '8px', textDecoration: 'none',
             fontSize: '14px', fontWeight: '600', whiteSpace: 'nowrap',
-            boxShadow: '0 4px 15px rgba(124,58,237,0.4)'
+            boxShadow: '0 4px 15px rgba(77,184,232,0.3)'
           }}>Devis gratuit</Link>
-
           <button onClick={() => setMenuOpen(!menuOpen)} style={{
             background: 'none', border: 'none', color: '#fff', fontSize: '24px',
             cursor: 'pointer', display: 'none', padding: '4px'
@@ -56,7 +58,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div style={{ background: '#2d1458', borderTop: '1px solid rgba(124,58,237,0.3)', padding: '16px 24px' }}>
+        <div style={{ background: '#1e3460', borderTop: '1px solid rgba(77,184,232,0.2)', padding: '16px 24px' }}>
           {[
             { label: 'Services', href: '/#services' },
             { label: 'Tarifs', href: '/#tarifs' },
@@ -65,12 +67,12 @@ export default function Header() {
             { label: 'Contact', href: '/#contact' },
           ].map(link => (
             <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} style={{
-              display: 'block', color: '#c084fc', textDecoration: 'none',
-              padding: '10px 0', borderBottom: '1px solid rgba(124,58,237,0.15)', fontWeight: '500'
+              display: 'block', color: '#7dcef0', textDecoration: 'none',
+              padding: '10px 0', borderBottom: '1px solid rgba(77,184,232,0.15)', fontWeight: '500'
             }}>{link.label}</Link>
           ))}
           <a href="tel:0320492900" style={{
-            display: 'block', color: '#a855f7', textDecoration: 'none',
+            display: 'block', color: '#4db8e8', textDecoration: 'none',
             padding: '12px 0', fontWeight: '700', fontSize: '16px'
           }}>📞 03 20 49 29 00</a>
         </div>
