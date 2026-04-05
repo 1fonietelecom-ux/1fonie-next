@@ -28,7 +28,7 @@ function Header() {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '70px' }}>
 
         <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="https://www.1fonie.fr/logo.png" alt="1fonie" style={{ height: '36px', objectFit: 'contain' }} />
+          <img src="/logo-blanc.png" alt="1fonie" style={{ height: '36px', objectFit: 'contain' }} />
         </Link>
 
         <nav style={{ display: 'flex', gap: '28px', alignItems: 'center' }} className="nav-desktop-1f">
@@ -86,7 +86,7 @@ function Footer() {
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '40px' }}>
           <div>
-            <img src="https://www.1fonie.fr/logo.png" alt="1fonie" style={{ height: '40px', objectFit: 'contain', marginBottom: '16px', filter: 'brightness(0) invert(1)' }} />
+            <img src="/logo-blanc.png" alt="1fonie" style={{ height: '40px', objectFit: 'contain', marginBottom: '16px' }} />
             <p style={{ color: '#7dcef0', fontSize: '13px', lineHeight: '1.6' }}>Expert IT & téléphonie pour TPE/PME — France entière</p>
             <a href="tel:0320492900" style={{ display: 'block', color: '#4db8e8', fontWeight: '700', marginTop: '12px', textDecoration: 'none' }}>📞 03 20 49 29 00</a>
             <a href="mailto:contact@1fonie.fr" style={{ display: 'block', color: '#7dcef0', fontSize: '13px', marginTop: '4px', textDecoration: 'none' }}>contact@1fonie.fr</a>
