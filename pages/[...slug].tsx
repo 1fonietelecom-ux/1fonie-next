@@ -361,26 +361,26 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
       </Head>
 
       {/* HERO */}
-      <section style={{ background: 'linear-gradient(160deg, #1e0b3e 0%, #2d1458 100%)', padding: '80px 24px', textAlign: 'center' }}>
+      <section style={{ background: 'linear-gradient(160deg, #1a2744 0%, #1e3460 100%)', padding: '80px 24px', textAlign: 'center' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(124,58,237,0.2)', border: '1px solid rgba(124,58,237,0.4)', borderRadius: '50px', padding: '6px 16px', marginBottom: '24px' }}>
-            <span style={{ color: '#c084fc', fontSize: '13px', fontWeight: '600' }}>📍 {nom} — {config.label}</span>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba((77,184,232,0.2)', border: '1px solid rgba((77,184,232,0.4)', borderRadius: '50px', padding: '6px 16px', marginBottom: '24px' }}>
+            <span style={{ color: '#7dcef0', fontSize: '13px', fontWeight: '600' }}>📍 {nom} — {config.label}</span>
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 52px)', fontWeight: '800', color: '#fff', lineHeight: '1.15', marginBottom: '20px' }}>
             {config.icon} {config.label}<br />
-            <span style={{ background: 'linear-gradient(135deg, #a855f7, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{prefix} {nom}</span>
+            <span style={{ background: 'linear-gradient(135deg, #2aa8de, #4db8e8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{prefix} {nom}</span>
           </h1>
-          <p style={{ color: '#c084fc', fontSize: '17px', lineHeight: '1.7', marginBottom: '32px' }}>{intro}</p>
+          <p style={{ color: '#7dcef0', fontSize: '17px', lineHeight: '1.7', marginBottom: '32px' }}>{intro}</p>
           {entreprises && (
-            <p style={{ color: '#a855f7', fontSize: '14px', marginBottom: '24px' }}>
+            <p style={{ color: '#2aa8de', fontSize: '14px', marginBottom: '24px' }}>
               📊 <strong>{entreprises} entreprises</strong> dans {type === 'dept' ? 'ce département' : 'cette zone'} — source INSEE
             </p>
           )}
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/#contact" style={{ background: 'linear-gradient(135deg, #7c3aed, #a855f7)', color: '#fff', padding: '14px 28px', borderRadius: '10px', textDecoration: 'none', fontSize: '15px', fontWeight: '700', boxShadow: '0 8px 30px rgba(124,58,237,0.5)' }}>
+            <a href="/#contact" style={{ background: 'linear-gradient(135deg, #4db8e8, #2aa8de)', color: '#fff', padding: '14px 28px', borderRadius: '10px', textDecoration: 'none', fontSize: '15px', fontWeight: '700', boxShadow: '0 8px 30px rgba((77,184,232,0.5)' }}>
               🚀 Devis gratuit {prefix} {nom}
             </a>
-            <a href="tel:0320492900" style={{ background: 'transparent', color: '#c084fc', padding: '14px 28px', borderRadius: '10px', textDecoration: 'none', fontSize: '15px', fontWeight: '600', border: '2px solid rgba(124,58,237,0.5)' }}>
+            <a href="tel:0320492900" style={{ background: 'transparent', color: '#7dcef0', padding: '14px 28px', borderRadius: '10px', textDecoration: 'none', fontSize: '15px', fontWeight: '600', border: '2px solid rgba((77,184,232,0.5)' }}>
               📞 03 20 49 29 00
             </a>
           </div>
@@ -388,9 +388,9 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
       </section>
 
       {/* ANECDOTE */}
-      <section style={{ padding: '48px 24px', background: '#fff', borderBottom: '1px solid rgba(124,58,237,0.1)' }}>
+      <section style={{ padding: '48px 24px', background: '#fff', borderBottom: '1px solid rgba((77,184,232,0.1)' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.08), rgba(168,85,247,0.05))', borderRadius: '16px', padding: '32px', border: '1px solid rgba(124,58,237,0.15)' }}>
+          <div style={{ background: 'linear-gradient(135deg, rgba((77,184,232,0.08), rgba(168,85,247,0.05))', borderRadius: '16px', padding: '32px', border: '1px solid rgba((77,184,232,0.15)' }}>
             <div style={{ fontSize: '28px', marginBottom: '12px' }}>💡</div>
             <p style={{ color: '#374151', fontSize: '16px', lineHeight: '1.7', fontStyle: 'italic' }}><strong>{nom} :</strong> {anecdote}</p>
           </div>
@@ -398,12 +398,12 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
       </section>
 
       {/* SERVICES */}
-      <section style={{ padding: '80px 24px', background: '#faf5ff' }}>
+      <section style={{ padding: '80px 24px', background: '#f0f8ff' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 3vw, 38px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '12px', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 'clamp(24px, 3vw, 38px)', fontWeight: '800', color: '#1a2744', marginBottom: '12px', textAlign: 'center' }}>
             Nos services {prefix} {nom}
           </h2>
-          <p style={{ color: '#6b21a8', fontSize: '16px', textAlign: 'center', marginBottom: '40px' }}>Intervention sur site ou à distance — réponse sous 24h</p>
+          <p style={{ color: '#1a5f8a', fontSize: '16px', textAlign: 'center', marginBottom: '40px' }}>Intervention sur site ou à distance — réponse sous 24h</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px' }}>
             {[
               { icon: '📞', title: `Téléphonie IP ${prefix} ${nom}`, desc: 'Standards Yealink, Centrex cloud, SVI. Installation et formation sur site.', href: `/telephonie-entreprise-${slug}` },
@@ -412,11 +412,11 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
               { icon: '🌐', title: `Réseau & Fibre ${prefix} ${nom}`, desc: 'FTTH Pro 65€/mois, WiFi 6/7, firewall géré, VPN multi-sites.', href: '/reseau-wifi-professionnel' },
             ].map((s, i) => (
               <a key={i} href={s.href} style={{ textDecoration: 'none' }}>
-                <div style={{ background: '#fff', borderRadius: '16px', padding: '28px', border: '1px solid rgba(124,58,237,0.12)', boxShadow: '0 4px 15px rgba(124,58,237,0.06)', height: '100%' }}>
+                <div style={{ background: '#fff', borderRadius: '16px', padding: '28px', border: '1px solid rgba((77,184,232,0.12)', boxShadow: '0 4px 15px rgba((77,184,232,0.06)', height: '100%' }}>
                   <div style={{ fontSize: '28px', marginBottom: '12px' }}>{s.icon}</div>
-                  <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#1e0b3e', marginBottom: '8px' }}>{s.title}</h3>
+                  <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#1a2744', marginBottom: '8px' }}>{s.title}</h3>
                   <p style={{ color: '#6b7280', fontSize: '13px', lineHeight: '1.6', marginBottom: '12px' }}>{s.desc}</p>
-                  <span style={{ color: '#7c3aed', fontWeight: '600', fontSize: '13px' }}>En savoir plus →</span>
+                  <span style={{ color: '#4db8e8', fontWeight: '600', fontSize: '13px' }}>En savoir plus →</span>
                 </div>
               </a>
             ))}
@@ -427,13 +427,13 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
       {/* FAQ */}
       <section style={{ padding: '80px 24px', background: '#fff' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '40px', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: '800', color: '#1a2744', marginBottom: '40px', textAlign: 'center' }}>
             Questions fréquentes
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {faq.map((f, i) => (
-              <div key={i} style={{ background: '#faf5ff', borderRadius: '12px', padding: '24px', border: '1px solid rgba(124,58,237,0.12)' }}>
-                <h3 style={{ fontSize: '16px', fontWeight: '700', color: '#1e0b3e', marginBottom: '12px' }}>❓ {f.q}</h3>
+              <div key={i} style={{ background: '#f0f8ff', borderRadius: '12px', padding: '24px', border: '1px solid rgba((77,184,232,0.12)' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: '700', color: '#1a2744', marginBottom: '12px' }}>❓ {f.q}</h3>
                 <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.7' }}>{f.a}</p>
               </div>
             ))}
@@ -442,9 +442,9 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
       </section>
 
       {/* STATS */}
-      <section style={{ padding: '60px 24px', background: '#faf5ff' }}>
+      <section style={{ padding: '60px 24px', background: '#f0f8ff' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 2.5vw, 32px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '32px' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 2.5vw, 32px)', fontWeight: '800', color: '#1a2744', marginBottom: '32px' }}>
             Pourquoi choisir 1fonie {prefix} {nom} ?
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px' }}>
@@ -454,9 +454,9 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
               { icon: '📡', val: '24/7', label: 'supervision réseau' },
               { icon: '⚡', val: '< 24h', label: 'délai de réponse' },
             ].map((s, i) => (
-              <div key={i} style={{ background: '#fff', borderRadius: '12px', padding: '20px', border: '1px solid rgba(124,58,237,0.12)' }}>
+              <div key={i} style={{ background: '#fff', borderRadius: '12px', padding: '20px', border: '1px solid rgba((77,184,232,0.12)' }}>
                 <div style={{ fontSize: '22px', marginBottom: '6px' }}>{s.icon}</div>
-                <div style={{ fontSize: '22px', fontWeight: '800', color: '#7c3aed', marginBottom: '4px' }}>{s.val}</div>
+                <div style={{ fontSize: '22px', fontWeight: '800', color: '#4db8e8', marginBottom: '4px' }}>{s.val}</div>
                 <div style={{ color: '#6b7280', fontSize: '12px' }}>{s.label}</div>
               </div>
             ))}
@@ -467,12 +467,12 @@ export default function CityPage({ type, service, slug, nom, anecdote, intro, fa
       {/* MAILLAGE */}
       <section style={{ padding: '60px 24px', background: '#fff' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-          <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#1e0b3e', marginBottom: '20px' }}>
+          <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#1a2744', marginBottom: '20px' }}>
             1fonie intervient aussi dans ces {type === 'dept' ? 'départements' : 'villes'}
           </h3>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
             {voisins.map(v => (
-              <a key={v.slug} href={`/${service}-${v.slug}`} style={{ background: '#faf5ff', border: '1px solid rgba(124,58,237,0.2)', borderRadius: '50px', padding: '7px 14px', fontSize: '13px', color: '#7c3aed', textDecoration: 'none', fontWeight: '500' }}>
+              <a key={v.slug} href={`/${service}-${v.slug}`} style={{ background: '#f0f8ff', border: '1px solid rgba((77,184,232,0.2)', borderRadius: '50px', padding: '7px 14px', fontSize: '13px', color: '#4db8e8', textDecoration: 'none', fontWeight: '500' }}>
                 {v.nom}
               </a>
             ))}
