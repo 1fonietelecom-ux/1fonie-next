@@ -25,37 +25,37 @@ export default function Leasing() {
       </Head>
 
       {/* HERO */}
-      <section style={{ background: 'linear-gradient(160deg, #1e0b3e 0%, #2d1458 100%)', padding: '80px 24px', textAlign: 'center' }}>
+      <section style={{ background: 'linear-gradient(160deg, #1a2744 0%, #1e3460 100%)', padding: '80px 24px', textAlign: 'center' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(124,58,237,0.2)', border: '1px solid rgba(124,58,237,0.4)', borderRadius: '50px', padding: '6px 16px', marginBottom: '28px' }}>
-            <span style={{ color: '#c084fc', fontSize: '13px', fontWeight: '600' }}>💳 Location financière 36 mois — Grenke & Investitel</span>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(77,184,232,0.2)', border: '1px solid rgba(77,184,232,0.4)', borderRadius: '50px', padding: '6px 16px', marginBottom: '28px' }}>
+            <span style={{ color: '#7dcef0', fontSize: '13px', fontWeight: '600' }}>💳 Location financière 36 mois — Grenke & Investitel</span>
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 52px)', fontWeight: '800', color: '#fff', lineHeight: '1.15', marginBottom: '24px' }}>
             Équipez votre entreprise<br />
-            <span style={{ background: 'linear-gradient(135deg, #a855f7, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>sans immobiliser votre trésorerie</span>
+            <span style={{ background: 'linear-gradient(135deg, #2aa8de, #4db8e8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>sans immobiliser votre trésorerie</span>
           </h1>
-          <p style={{ color: '#c084fc', fontSize: '18px', lineHeight: '1.7', marginBottom: '36px' }}>
+          <p style={{ color: '#7dcef0', fontSize: '18px', lineHeight: '1.7', marginBottom: '36px' }}>
             Téléphones Yealink, PC, serveurs, firewall, switches — tout votre matériel IT en location financière. Un loyer mensuel fixe, des charges 100% déductibles.
           </p>
-          <a href="/#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'linear-gradient(135deg, #7c3aed, #a855f7)', color: '#fff', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontSize: '16px', fontWeight: '700', boxShadow: '0 8px 30px rgba(124,58,237,0.5)' }}>
+          <a href="/#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'linear-gradient(135deg, #4db8e8, #2aa8de)', color: '#fff', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontSize: '16px', fontWeight: '700', boxShadow: '0 8px 30px rgba(77,184,232,0.5)' }}>
             🚀 Vérifier ma finançabilité gratuitement
           </a>
         </div>
       </section>
 
       {/* AVANTAGES */}
-      <section style={{ padding: '80px 24px', background: '#faf5ff' }}>
+      <section style={{ padding: '80px 24px', background: '#f0f8ff' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-            <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '12px' }}>Pourquoi choisir le leasing ?</h2>
+            <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#1a2744', marginBottom: '12px' }}>Pourquoi choisir le leasing ?</h2>
             <p style={{ color: '#6b21a8', fontSize: '17px' }}>6 bonnes raisons de ne pas acheter votre matériel IT</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
             {avantages.map((a, i) => (
-              <div key={i} style={{ background: '#fff', borderRadius: '16px', padding: '32px 24px', border: '1px solid rgba(124,58,237,0.15)', boxShadow: '0 4px 20px rgba(124,58,237,0.06)' }}>
+              <div key={i} style={{ background: '#fff', borderRadius: '16px', padding: '32px 24px', border: '1px solid rgba(77,184,232,0.15)', boxShadow: '0 4px 20px rgba(77,184,232,0.06)' }}>
                 <div style={{ fontSize: '36px', marginBottom: '16px' }}>{a.icon}</div>
-                <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#1e0b3e', marginBottom: '12px' }}>{a.title}</h3>
-                <p style={{ color: '#6b7280', fontSize: '14px', lineHeight: '1.7' }}>{a.desc}</p>
+                <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#1a2744', marginBottom: '12px' }}>{a.title}</h3>
+                <p style={{ color: '#4a6080', fontSize: '14px', lineHeight: '1.7' }}>{a.desc}</p>
               </div>
             ))}
           </div>
@@ -65,21 +65,21 @@ export default function Leasing() {
       {/* COMPARATIF */}
       <section style={{ padding: '80px 24px', background: '#fff' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '48px', textAlign: 'center' }}>Achat comptant vs Leasing</h2>
+          <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#1a2744', marginBottom: '48px', textAlign: 'center' }}>Achat comptant vs Leasing</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }} className="grid-2-1f">
             <div style={{ background: '#f9fafb', borderRadius: '16px', padding: '32px', border: '1px solid #e5e7eb' }}>
               <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#374151', marginBottom: '24px', textAlign: 'center' }}>💸 Achat comptant</h3>
               {['Décaissement immédiat important', 'Immobilise votre trésorerie', 'Amortissement sur 3-5 ans', 'Matériel obsolète en fin de vie', 'Pas de déductibilité immédiate'].map((item, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#6b7280', fontSize: '14px' }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#4a6080', fontSize: '14px' }}>
                   <span style={{ color: '#ef4444', fontWeight: '700', flexShrink: 0 }}>✗</span> {item}
                 </div>
               ))}
             </div>
-            <div style={{ background: 'linear-gradient(135deg, #1e0b3e, #2d1458)', borderRadius: '16px', padding: '32px', border: '2px solid #7c3aed' }}>
+            <div style={{ background: 'linear-gradient(135deg, #1a2744, #1e3460)', borderRadius: '16px', padding: '32px', border: '2px solid #4db8e8' }}>
               <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#fff', marginBottom: '24px', textAlign: 'center' }}>✅ Leasing 1fonie</h3>
               {['Zéro apport, loyer mensuel fixe', 'Trésorerie préservée', 'Charges déductibles à 100%', 'Renouvellement automatique à 36 mois', 'Déductibilité immédiate'].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#e9d5ff', fontSize: '14px' }}>
-                  <span style={{ color: '#a855f7', fontWeight: '700', flexShrink: 0 }}>✓</span> {item}
+                  <span style={{ color: '#2aa8de', fontWeight: '700', flexShrink: 0 }}>✓</span> {item}
                 </div>
               ))}
             </div>
@@ -89,18 +89,18 @@ export default function Leasing() {
       </section>
 
       {/* PARTENAIRES */}
-      <section style={{ padding: '60px 24px', background: '#faf5ff' }}>
+      <section style={{ padding: '60px 24px', background: '#f0f8ff' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '12px' }}>Nos partenaires financiers</h2>
+          <h2 style={{ fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: '800', color: '#1a2744', marginBottom: '12px' }}>Nos partenaires financiers</h2>
           <p style={{ color: '#6b21a8', marginBottom: '40px' }}>Des organismes spécialisés en financement IT</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }} className="grid-2-1f">
             {[
               { name: 'Grenke', desc: 'Leader européen du leasing IT. Réponse rapide, conditions souples pour les TPE/PME.' },
               { name: 'Investitel', desc: 'Spécialiste de la location financière télécom et informatique en France.' },
             ].map(p => (
-              <div key={p.name} style={{ background: '#fff', borderRadius: '16px', padding: '28px', border: '1px solid rgba(124,58,237,0.2)', boxShadow: '0 4px 20px rgba(124,58,237,0.06)' }}>
-                <div style={{ fontSize: '22px', fontWeight: '800', color: '#7c3aed', marginBottom: '12px' }}>{p.name}</div>
-                <p style={{ color: '#6b7280', fontSize: '13px', lineHeight: '1.6' }}>{p.desc}</p>
+              <div key={p.name} style={{ background: '#fff', borderRadius: '16px', padding: '28px', border: '1px solid rgba(77,184,232,0.2)', boxShadow: '0 4px 20px rgba(77,184,232,0.06)' }}>
+                <div style={{ fontSize: '22px', fontWeight: '800', color: '#4db8e8', marginBottom: '12px' }}>{p.name}</div>
+                <p style={{ color: '#4a6080', fontSize: '13px', lineHeight: '1.6' }}>{p.desc}</p>
               </div>
             ))}
           </div>
@@ -111,15 +111,15 @@ export default function Leasing() {
       <section style={{ padding: '80px 24px', background: '#fff' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#1e0b3e', marginBottom: '12px' }}>Comment ça marche ?</h2>
+            <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#1a2744', marginBottom: '12px' }}>Comment ça marche ?</h2>
             <p style={{ color: '#6b21a8', fontSize: '17px' }}>4 étapes simples pour être équipé</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px' }}>
             {etapes.map((e, i) => (
               <div key={i} style={{ textAlign: 'center', padding: '24px' }}>
-                <div style={{ width: '56px', height: '56px', background: 'linear-gradient(135deg, #7c3aed, #a855f7)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: '800', color: '#fff' }}>{e.num}</div>
-                <h3 style={{ fontSize: '16px', fontWeight: '700', color: '#1e0b3e', marginBottom: '8px' }}>{e.title}</h3>
-                <p style={{ color: '#6b7280', fontSize: '13px', lineHeight: '1.6' }}>{e.desc}</p>
+                <div style={{ width: '56px', height: '56px', background: 'linear-gradient(135deg, #4db8e8, #2aa8de)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: '800', color: '#fff' }}>{e.num}</div>
+                <h3 style={{ fontSize: '16px', fontWeight: '700', color: '#1a2744', marginBottom: '8px' }}>{e.title}</h3>
+                <p style={{ color: '#4a6080', fontSize: '13px', lineHeight: '1.6' }}>{e.desc}</p>
               </div>
             ))}
           </div>
@@ -127,11 +127,11 @@ export default function Leasing() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '80px 24px', background: 'linear-gradient(135deg, #1e0b3e, #2d1458)', textAlign: 'center' }}>
+      <section style={{ padding: '80px 24px', background: 'linear-gradient(135deg, #1a2744, #1e3460)', textAlign: 'center' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: '800', color: '#fff', marginBottom: '16px' }}>Prêt à équiper votre entreprise ?</h2>
-          <p style={{ color: '#c084fc', fontSize: '18px', marginBottom: '36px' }}>Vérification de finançabilité gratuite et sans engagement — réponse sous 24h</p>
-          <a href="/#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'linear-gradient(135deg, #7c3aed, #a855f7)', color: '#fff', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontSize: '16px', fontWeight: '700', boxShadow: '0 8px 30px rgba(124,58,237,0.5)' }}>
+          <p style={{ color: '#7dcef0', fontSize: '18px', marginBottom: '36px' }}>Vérification de finançabilité gratuite et sans engagement — réponse sous 24h</p>
+          <a href="/#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'linear-gradient(135deg, #4db8e8, #2aa8de)', color: '#fff', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontSize: '16px', fontWeight: '700', boxShadow: '0 8px 30px rgba(77,184,232,0.5)' }}>
             🚀 Demander mon devis leasing
           </a>
         </div>
